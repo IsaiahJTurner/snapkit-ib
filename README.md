@@ -1,3 +1,4 @@
+# PLEASE HELP IF YOU WORK AT SNAPCHAT
 The SnapSDK causes Interface Builder to crash when rendering IBDesignables. This happens even if SnapKit is not imported into ANY files.
 To reproduce:
 1. Create a new project (iOS App Xcode Template works)
