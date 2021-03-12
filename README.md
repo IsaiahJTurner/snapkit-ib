@@ -15,6 +15,7 @@ You can find an example project that reproduces the issue here: https://github.c
 You may need to to go to Xcode tab bar -> Editor -> Automatically Refresh Designable Views and check that so designables will update.
 
 Here is part of the crash log from ~/Library/Logs/DiagnosticReports:
+```
 Thread 0 Crashed:
 0   libsystem_malloc.dylib        	0x00007fff20165063 tiny_malloc_should_clear + 120
 1   libsystem_malloc.dylib        	0x00007fff2014b45f szone_malloc_should_clear + 66
@@ -41,7 +42,7 @@ Thread 0 Crashed:
 22  com.snapchat.SCSDKCoreKit     	0x0000000210269cd1 0x210262000 + 31953
 23  com.snapchat.SCSDKCoreKit     	0x00000002102698a6 0x210262000 + 30886
 24  com.snapchat.SCSDKCoreKit     	0x0000000210269cd1 0x210262000 + 31953
-
+```
 ```
 @IBDesignable class DesignableLabel: UILabel {
     @IBInspectable var isRedText: Bool = false {
